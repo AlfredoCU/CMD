@@ -1,0 +1,20 @@
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe.config
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.pdb
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csprojAssemblyReference.cache
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.cmd.resources
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Properties.Resources.resources
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.GenerateResource.cache
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.CoreCompileInputs.cache
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.exe
+C:\Users\Juan Ramon\source\repos\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.pdb
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe.config
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.exe
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.pdb
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.pdb
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csprojResolveAssemblyReference.cache
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.cmd.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Properties.Resources.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.GenerateResource.Cache
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Info.resources
