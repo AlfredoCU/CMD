@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,6 +26,14 @@ namespace Practica_1_CMD
         }
 
         // Ménu Principal.
+        // Explorador de archivos.
+        private void TsmiExplorador_Click(object sender, EventArgs e)
+        {
+            Explore abrir = new Explore();
+            abrir.ShowDialog();
+        }
+
+        // Información de comandos.
         private void TsmiInfo_Click(object sender, EventArgs e)
         {
             Info abrir = new Info();
@@ -117,7 +126,7 @@ namespace Practica_1_CMD
         {
             string data1 = "Símbolo del sistema (CMD). Versión 1.0\n";
             string data2 = "Sistema de comandos de windows.\n\n";
-            string data3 = "******************************************\n> ";
+            string data3 = "******************************************\n# ";
             this.rtbConsola.Text = (data1 + data2 + data3);
             this.rtbConsola.SelectionStart = this.rtbConsola.Text.Length;
         }
@@ -127,11 +136,15 @@ namespace Practica_1_CMD
         {
             if( e.KeyCode == Keys.Enter)
             {
+                // string dirbase = "cd C:\\Users\\Alfredo\\Desktop && ";
+                // C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug
+                // string mostrar = " && explorer .";
                 string tode = this.rtbConsola.Text;
-                string[] comandite = tode.Split('>');
+                string[] comandite = tode.Split('#');
                 int last = comandite.Length;
                 string result = Command(comandite[last - 1]);
-                this.rtbConsola.Text = result + "\n> ";
+                // string result = Command(dirbase + comandite[last - 1] + mostrar);
+                this.rtbConsola.Text = result + "\n# ";
                 this.rtbConsola.SelectionStart = this.rtbConsola.Text.Length - 1;
             }
         }

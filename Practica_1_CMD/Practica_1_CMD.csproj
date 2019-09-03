@@ -52,6 +52,12 @@
     <Compile Include="cmd.Designer.cs">
       <DependentUpon>cmd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Explore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explore.Designer.cs">
+      <DependentUpon>Explore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="cmd.resx">
       <DependentUpon>cmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explore.resx">
+      <DependentUpon>Explore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Info.resx">
       <DependentUpon>Info.cs</DependentUpon>

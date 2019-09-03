@@ -35,6 +35,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.msPrincipal = new System.Windows.Forms.MenuStrip();
             this.TsmiArchivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmExplorador = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiHerr = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,12 +95,21 @@
             // TsmiArchivo
             // 
             this.TsmiArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmExplorador,
             this.TsmiInfo,
             this.TsmiSalir});
             this.TsmiArchivo.Image = ((System.Drawing.Image)(resources.GetObject("TsmiArchivo.Image")));
             this.TsmiArchivo.Name = "TsmiArchivo";
             this.TsmiArchivo.Size = new System.Drawing.Size(84, 21);
             this.TsmiArchivo.Text = "Archivo";
+            // 
+            // TsmExplorador
+            // 
+            this.TsmExplorador.Image = ((System.Drawing.Image)(resources.GetObject("TsmExplorador.Image")));
+            this.TsmExplorador.Name = "TsmExplorador";
+            this.TsmExplorador.Size = new System.Drawing.Size(152, 22);
+            this.TsmExplorador.Text = "Explorador";
+            this.TsmExplorador.Click += new System.EventHandler(this.TsmiExplorador_Click);
             // 
             // TsmiInfo
             // 
@@ -222,6 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiCMD;
         private System.Windows.Forms.FontDialog fdFormato;
         private System.Windows.Forms.ColorDialog cdColorFC;
+        private System.Windows.Forms.ToolStripMenuItem TsmExplorador;
     }
 }
 
