@@ -29,14 +29,21 @@ namespace Practica_1_CMD
         // Explorador de archivos.
         private void TsmiExplorador_Click(object sender, EventArgs e)
         {
-            Explore abrir = new Explore();
-            abrir.ShowDialog();
+            Explore abrirE = new Explore();
+            abrirE.ShowDialog();
         }
 
         // Información de comandos.
         private void TsmiInfo_Click(object sender, EventArgs e)
         {
             Info abrir = new Info();
+            abrir.ShowDialog();
+        }
+
+        // Ver documentos.
+        private void TsmiDocumentos_Click(object sender, EventArgs e)
+        {
+            Doc abrir = new Doc();
             abrir.ShowDialog();
         }
 

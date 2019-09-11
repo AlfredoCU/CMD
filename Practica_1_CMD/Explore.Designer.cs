@@ -46,21 +46,22 @@
             this.lvArchivos.LargeImageList = this.ilArchivos;
             this.lvArchivos.Location = new System.Drawing.Point(0, 0);
             this.lvArchivos.Name = "lvArchivos";
-            this.lvArchivos.Size = new System.Drawing.Size(620, 351);
+            this.lvArchivos.Size = new System.Drawing.Size(698, 316);
             this.lvArchivos.TabIndex = 0;
             this.lvArchivos.UseCompatibleStateImageBehavior = false;
             this.lvArchivos.SelectedIndexChanged += new System.EventHandler(this.lvArchivos_SelectedIndexChanged);
             // 
             // Explore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(620, 351);
+            this.ClientSize = new System.Drawing.Size(698, 316);
             this.Controls.Add(this.lvArchivos);
-            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Explore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Explorador";

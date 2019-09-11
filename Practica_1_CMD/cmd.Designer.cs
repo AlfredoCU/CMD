@@ -38,6 +38,8 @@
             this.TsmExplorador = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiDocumentos = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiHerr = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiPre = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiColorF = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +86,7 @@
             this.msPrincipal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.msPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiArchivo,
+            this.verToolStripMenuItem,
             this.TsmiHerr,
             this.TsmiAcerca});
             this.msPrincipal.Location = new System.Drawing.Point(0, 0);
@@ -126,6 +129,23 @@
             this.TsmiSalir.Size = new System.Drawing.Size(152, 22);
             this.TsmiSalir.Text = "Salir";
             this.TsmiSalir.Click += new System.EventHandler(this.TsmiSalir_Click);
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiDocumentos});
+            this.verToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("verToolStripMenuItem.Image")));
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // TsmiDocumentos
+            // 
+            this.TsmiDocumentos.Image = ((System.Drawing.Image)(resources.GetObject("TsmiDocumentos.Image")));
+            this.TsmiDocumentos.Name = "TsmiDocumentos";
+            this.TsmiDocumentos.Size = new System.Drawing.Size(160, 22);
+            this.TsmiDocumentos.Text = "Documentos";
+            this.TsmiDocumentos.Click += new System.EventHandler(this.TsmiDocumentos_Click);
             // 
             // TsmiHerr
             // 
@@ -196,6 +216,7 @@
             this.ClientSize = new System.Drawing.Size(782, 536);
             this.Controls.Add(this.msPrincipal);
             this.Controls.Add(this.gbConsola);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.msPrincipal;
@@ -233,6 +254,8 @@
         private System.Windows.Forms.FontDialog fdFormato;
         private System.Windows.Forms.ColorDialog cdColorFC;
         private System.Windows.Forms.ToolStripMenuItem TsmExplorador;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TsmiDocumentos;
     }
 }
 
