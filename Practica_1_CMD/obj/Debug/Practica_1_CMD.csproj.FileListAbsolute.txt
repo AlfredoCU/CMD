@@ -36,3 +36,7 @@ C:\Users\Alfredo\Desktop\Practica_2_Explorador\Practica_1_CMD\obj\Debug\Practica
 C:\Users\Alfredo\Desktop\Practica_2_Explorador\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.GenerateResource.Cache
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Doc.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\GongShell.xml
+C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe.config
+C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.exe
+C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.pdb
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Bateria.resources

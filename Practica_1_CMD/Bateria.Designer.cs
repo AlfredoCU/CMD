@@ -1,6 +1,6 @@
 ﻿namespace Practica_1_CMD
 {
-    partial class Explore
+    partial class Bateria
     {
         /// <summary>
         /// Required designer variable.
@@ -28,52 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Explore));
-            this.ilArchivos = new System.Windows.Forms.ImageList(this.components);
-            this.lvArchivos = new System.Windows.Forms.ListView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bateria));
+            this.pbBateria = new System.Windows.Forms.PictureBox();
+            this.rtbInfo = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBateria)).BeginInit();
             this.SuspendLayout();
             // 
-            // ilArchivos
+            // pbBateria
             // 
-            this.ilArchivos.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.ilArchivos.ImageSize = new System.Drawing.Size(32, 32);
-            this.ilArchivos.TransparentColor = System.Drawing.Color.Transparent;
+            this.pbBateria.Image = ((System.Drawing.Image)(resources.GetObject("pbBateria.Image")));
+            this.pbBateria.Location = new System.Drawing.Point(12, 12);
+            this.pbBateria.Name = "pbBateria";
+            this.pbBateria.Size = new System.Drawing.Size(68, 76);
+            this.pbBateria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBateria.TabIndex = 0;
+            this.pbBateria.TabStop = false;
             // 
-            // lvArchivos
+            // rtbInfo
             // 
-            this.lvArchivos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvArchivos.LargeImageList = this.ilArchivos;
-            this.lvArchivos.Location = new System.Drawing.Point(0, 0);
-            this.lvArchivos.Name = "lvArchivos";
-            this.lvArchivos.Size = new System.Drawing.Size(698, 316);
-            this.lvArchivos.TabIndex = 0;
-            this.lvArchivos.UseCompatibleStateImageBehavior = false;
-            this.lvArchivos.SelectedIndexChanged += new System.EventHandler(this.lvArchivos_SelectedIndexChanged);
+            this.rtbInfo.Location = new System.Drawing.Point(86, 12);
+            this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.ReadOnly = true;
+            this.rtbInfo.Size = new System.Drawing.Size(275, 76);
+            this.rtbInfo.TabIndex = 1;
+            this.rtbInfo.Text = "";
             // 
-            // Explore
+            // Bateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(698, 316);
-            this.Controls.Add(this.lvArchivos);
+            this.ClientSize = new System.Drawing.Size(373, 100);
+            this.Controls.Add(this.rtbInfo);
+            this.Controls.Add(this.pbBateria);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Explore";
+            this.Name = "Bateria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Explorador";
-            this.Load += new System.EventHandler(this.Explore_Load);
+            this.Text = "Batería";
+            ((System.ComponentModel.ISupportInitialize)(this.pbBateria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ImageList ilArchivos;
-        private System.Windows.Forms.ListView lvArchivos;
+        private System.Windows.Forms.PictureBox pbBateria;
+        private System.Windows.Forms.RichTextBox rtbInfo;
     }
 }

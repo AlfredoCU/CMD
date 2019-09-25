@@ -37,6 +37,7 @@
             this.rtbInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbInfo.Location = new System.Drawing.Point(0, 0);
             this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.ReadOnly = true;
             this.rtbInfo.Size = new System.Drawing.Size(734, 462);
             this.rtbInfo.TabIndex = 0;
             this.rtbInfo.Text = resources.GetString("rtbInfo.Text");
