@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bateria.Designer.cs">
+      <DependentUpon>Bateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="cmd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bateria.resx">
+      <DependentUpon>Bateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cmd.resx">
       <DependentUpon>cmd.cs</DependentUpon>
     </EmbeddedResource>

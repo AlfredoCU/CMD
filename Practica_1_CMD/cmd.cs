@@ -13,6 +13,9 @@ namespace Practica_1_CMD
 {
     public partial class cmd : Form
     {
+        // Clase para la batería.
+        PowerStatus status = SystemInformation.PowerStatus;
+
         // Contructor.
         public cmd()
         {
@@ -22,10 +25,13 @@ namespace Practica_1_CMD
         // Vista CMD.
         private void cmd_Load(object sender, EventArgs e)
         {
-            dataStatic();
+            DataStatic();
+            BateriaTxt();
+            this.tDate.Enabled = true;
         }
 
         // Ménu Principal.
+
         // Explorador de archivos.
         private void TsmiExplorador_Click(object sender, EventArgs e)
         {
@@ -80,14 +86,28 @@ namespace Practica_1_CMD
         // Acerca del CMD.
         private void TsmiCMD_Click(object sender, EventArgs e)
         {
-            string mensaje = "Símbolo del sistema (CMD). \n\nVersión: 1.0";
+            string mensaje = "Símbolo del sistema (CMD). \n\nVersión: 3.0";
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Acerca del sistema.
+        private void TsmiSistema_Click(object sender, EventArgs e)
+        {
+            string mensaje = "Windows 10 Home Single Languaje. Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz 2.40GHz";
+            MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Bateria.
+        private void tsmiBat_Click(object sender, EventArgs e)
+        {
+            Bateria abrir = new Bateria();
+            abrir.ShowDialog();
         }
 
         // Salir del sistema.
         private void TsmiSalir_Click(object sender, EventArgs e)
         {
-            DialogResult dialogo = MessageBox.Show("¿Desea cerrar Símbolo del sistema (CMD)?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult dialogo = MessageBox.Show("¿Desea salir del sistema?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dialogo == DialogResult.OK)
             {
                 System.Windows.Forms.Application.Exit();
@@ -129,7 +149,7 @@ namespace Practica_1_CMD
         }
 
         // Se imprime un encabezado de inicio.
-        public void dataStatic()
+        public void DataStatic()
         {
             string data1 = "Símbolo del sistema (CMD). Versión 1.0\n";
             string data2 = "Sistema de comandos de windows.\n\n";
@@ -141,7 +161,7 @@ namespace Practica_1_CMD
         // Se escribre los comandos.
         private void rtbConsola_KeyDown(object sender, KeyEventArgs e)
         {
-            if( e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 // string dirbase = "cd C:\\Users\\Alfredo\\Desktop && ";
                 // C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug
@@ -154,6 +174,31 @@ namespace Practica_1_CMD
                 this.rtbConsola.Text = result + "\n# ";
                 this.rtbConsola.SelectionStart = this.rtbConsola.Text.Length - 1;
             }
+        }
+
+        // Hora actual del sistema. 
+        public void Date()
+        {
+            this.lblDate.Text = DateTime.Now.ToString();
+        }
+
+        // Bateria actual del sistema. 
+        public void Bateria()
+        {
+            this.pbBateria.Value = Convert.ToInt32(status.BatteryLifePercent * 100);
+        }
+
+        public void BateriaTxt()
+        {
+            this.lblBateria.Text = status.BatteryLifePercent.ToString("P0");
+        }
+
+        // Fecha en tiempo real.
+        private void tDate_Tick(object sender, EventArgs e)
+        {
+            Date();
+            Bateria();
+            BateriaTxt();
         }
     }
 }
