@@ -47,6 +47,7 @@
             this.lvArchivos.Location = new System.Drawing.Point(0, 0);
             this.lvArchivos.Name = "lvArchivos";
             this.lvArchivos.Size = new System.Drawing.Size(698, 316);
+            this.lvArchivos.SmallImageList = this.ilArchivos;
             this.lvArchivos.TabIndex = 0;
             this.lvArchivos.UseCompatibleStateImageBehavior = false;
             this.lvArchivos.SelectedIndexChanged += new System.EventHandler(this.lvArchivos_SelectedIndexChanged);

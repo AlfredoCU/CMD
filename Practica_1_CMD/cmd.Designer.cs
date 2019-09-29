@@ -44,6 +44,8 @@
             this.TsmiAcerca = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiCMD = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiMP = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiMPMusica = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiSistema = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBat = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiSalir = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +86,7 @@
             this.TsmiInicio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiArchivos,
             this.cMDToolStripMenuItem,
+            this.TsmiMP,
             this.TsmiSistema,
             this.tsmiBat,
             this.TsmiSalir});
@@ -98,7 +101,7 @@
             this.TsmiDocumentos});
             this.TsmiArchivos.Image = ((System.Drawing.Image)(resources.GetObject("TsmiArchivos.Image")));
             this.TsmiArchivos.Name = "TsmiArchivos";
-            this.TsmiArchivos.Size = new System.Drawing.Size(136, 22);
+            this.TsmiArchivos.Size = new System.Drawing.Size(168, 22);
             this.TsmiArchivos.Text = "Archivos";
             // 
             // TsmiDocumentos
@@ -117,7 +120,7 @@
             this.TsmiAcerca});
             this.cMDToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cMDToolStripMenuItem.Image")));
             this.cMDToolStripMenuItem.Name = "cMDToolStripMenuItem";
-            this.cMDToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.cMDToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.cMDToolStripMenuItem.Text = "CMD";
             // 
             // TsmiExplorador
@@ -198,11 +201,28 @@
             this.TsmiCMD.Text = "Acerca del CMD";
             this.TsmiCMD.Click += new System.EventHandler(this.TsmiCMD_Click);
             // 
+            // TsmiMP
+            // 
+            this.TsmiMP.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiMPMusica});
+            this.TsmiMP.Image = ((System.Drawing.Image)(resources.GetObject("TsmiMP.Image")));
+            this.TsmiMP.Name = "TsmiMP";
+            this.TsmiMP.Size = new System.Drawing.Size(168, 22);
+            this.TsmiMP.Text = "Media Player";
+            // 
+            // TsmiMPMusica
+            // 
+            this.TsmiMPMusica.Image = ((System.Drawing.Image)(resources.GetObject("TsmiMPMusica.Image")));
+            this.TsmiMPMusica.Name = "TsmiMPMusica";
+            this.TsmiMPMusica.Size = new System.Drawing.Size(152, 22);
+            this.TsmiMPMusica.Text = "Música";
+            this.TsmiMPMusica.Click += new System.EventHandler(this.TsmiMPMusica_Click);
+            // 
             // TsmiSistema
             // 
             this.TsmiSistema.Image = ((System.Drawing.Image)(resources.GetObject("TsmiSistema.Image")));
             this.TsmiSistema.Name = "TsmiSistema";
-            this.TsmiSistema.Size = new System.Drawing.Size(136, 22);
+            this.TsmiSistema.Size = new System.Drawing.Size(168, 22);
             this.TsmiSistema.Text = "Sistema";
             this.TsmiSistema.Click += new System.EventHandler(this.TsmiSistema_Click);
             // 
@@ -210,7 +230,7 @@
             // 
             this.tsmiBat.Image = ((System.Drawing.Image)(resources.GetObject("tsmiBat.Image")));
             this.tsmiBat.Name = "tsmiBat";
-            this.tsmiBat.Size = new System.Drawing.Size(136, 22);
+            this.tsmiBat.Size = new System.Drawing.Size(168, 22);
             this.tsmiBat.Text = "Batería";
             this.tsmiBat.Click += new System.EventHandler(this.tsmiBat_Click);
             // 
@@ -218,7 +238,7 @@
             // 
             this.TsmiSalir.Image = ((System.Drawing.Image)(resources.GetObject("TsmiSalir.Image")));
             this.TsmiSalir.Name = "TsmiSalir";
-            this.TsmiSalir.Size = new System.Drawing.Size(136, 22);
+            this.TsmiSalir.Size = new System.Drawing.Size(168, 22);
             this.TsmiSalir.Text = "Salir";
             this.TsmiSalir.Click += new System.EventHandler(this.TsmiSalir_Click);
             // 
@@ -389,6 +409,8 @@
         private System.Windows.Forms.ProgressBar pbBateria;
         private System.Windows.Forms.Label lblBateria;
         private System.Windows.Forms.Label lblBateriaTxt;
+        private System.Windows.Forms.ToolStripMenuItem TsmiMP;
+        private System.Windows.Forms.ToolStripMenuItem TsmiMPMusica;
     }
 }
 
