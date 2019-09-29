@@ -104,6 +104,13 @@ namespace Practica_1_CMD
             abrir.ShowDialog();
         }
 
+        // Reproductor de Música.
+        private void TsmiMPMusica_Click(object sender, EventArgs e)
+        {
+            Reproductor abrir = new Reproductor();
+            abrir.ShowDialog();
+        }
+
         // Salir del sistema.
         private void TsmiSalir_Click(object sender, EventArgs e)
         {

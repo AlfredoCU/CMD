@@ -40,3 +40,9 @@ C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\bin\Debug\Pra
 C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.exe
 C:\Users\Alfredo\Desktop\Práctica 3\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.pdb
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Bateria.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Interop.WMPLib.dll
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Interop.WMPLib.dll
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.ResolveComReference.cache
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Reproductor.resources
