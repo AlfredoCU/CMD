@@ -46,3 +46,4 @@ C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Interop.WMPLib.
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.ResolveComReference.cache
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Reproductor.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Descargar.resources

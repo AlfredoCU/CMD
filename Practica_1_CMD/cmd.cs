@@ -53,6 +53,13 @@ namespace Practica_1_CMD
             abrir.ShowDialog();
         }
 
+        // Descargar archivos.
+        private void TsmiDescargar_Click(object sender, EventArgs e)
+        {
+            Descargar abrir = new Descargar();
+            abrir.ShowDialog();
+        }
+
         // Color de fuente (Consola).
         private void TsmiColorF_Click(object sender, EventArgs e)
         {

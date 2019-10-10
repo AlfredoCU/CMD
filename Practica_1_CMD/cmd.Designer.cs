@@ -34,6 +34,7 @@
             this.TsmiInicio = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiArchivos = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiDocumentos = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiDescargar = new System.Windows.Forms.ToolStripMenuItem();
             this.cMDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiExplorador = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiHerr = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,7 +99,8 @@
             // TsmiArchivos
             // 
             this.TsmiArchivos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiDocumentos});
+            this.TsmiDocumentos,
+            this.TsmiDescargar});
             this.TsmiArchivos.Image = ((System.Drawing.Image)(resources.GetObject("TsmiArchivos.Image")));
             this.TsmiArchivos.Name = "TsmiArchivos";
             this.TsmiArchivos.Size = new System.Drawing.Size(168, 22);
@@ -111,6 +113,14 @@
             this.TsmiDocumentos.Size = new System.Drawing.Size(164, 22);
             this.TsmiDocumentos.Text = "Documentos";
             this.TsmiDocumentos.Click += new System.EventHandler(this.TsmiDocumentos_Click);
+            // 
+            // TsmiDescargar
+            // 
+            this.TsmiDescargar.Image = ((System.Drawing.Image)(resources.GetObject("TsmiDescargar.Image")));
+            this.TsmiDescargar.Name = "TsmiDescargar";
+            this.TsmiDescargar.Size = new System.Drawing.Size(164, 22);
+            this.TsmiDescargar.Text = "Descargar";
+            this.TsmiDescargar.Click += new System.EventHandler(this.TsmiDescargar_Click);
             // 
             // cMDToolStripMenuItem
             // 
@@ -214,7 +224,7 @@
             // 
             this.TsmiMPMusica.Image = ((System.Drawing.Image)(resources.GetObject("TsmiMPMusica.Image")));
             this.TsmiMPMusica.Name = "TsmiMPMusica";
-            this.TsmiMPMusica.Size = new System.Drawing.Size(152, 22);
+            this.TsmiMPMusica.Size = new System.Drawing.Size(126, 22);
             this.TsmiMPMusica.Text = "Música";
             this.TsmiMPMusica.Click += new System.EventHandler(this.TsmiMPMusica_Click);
             // 
@@ -411,6 +421,7 @@
         private System.Windows.Forms.Label lblBateriaTxt;
         private System.Windows.Forms.ToolStripMenuItem TsmiMP;
         private System.Windows.Forms.ToolStripMenuItem TsmiMPMusica;
+        private System.Windows.Forms.ToolStripMenuItem TsmiDescargar;
     }
 }
 
