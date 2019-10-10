@@ -21,7 +21,7 @@ namespace Practica_1_CMD
         public void InfoBateria()
         {
             PowerStatus status = SystemInformation.PowerStatus;
-            // Obtiene el estado actual de carga de la batería. Alto, cargando y bajo.
+            // Obtiene el estado actual de carga de la batería. Alto, Cargando y bajo.
             this.rtbInfo.Text = status.BatteryChargeStatus.ToString();
             // Obtiene el estado actual de energía del sistema.
             switch (status.PowerLineStatus)
