@@ -12,12 +12,14 @@ namespace Practica_1_CMD
 {
     public partial class Bateria : Form
     {
+        // Constructor.
         public Bateria()
         {
             InitializeComponent();
             InfoBateria();
         }
 
+        // Información de la batería.
         public void InfoBateria()
         {
             PowerStatus status = SystemInformation.PowerStatus;

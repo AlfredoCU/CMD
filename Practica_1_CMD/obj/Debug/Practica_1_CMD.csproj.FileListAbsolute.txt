@@ -14,7 +14,6 @@ C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.exe
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\bin\Debug\Practica_1_CMD.pdb
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csprojResolveAssemblyReference.cache
-C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.cmd.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Properties.Resources.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.GenerateResource.Cache
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Info.resources
@@ -47,3 +46,5 @@ C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\AxInterop.WMPLi
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.csproj.ResolveComReference.cache
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Reproductor.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Descargar.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Inicio.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Cmd.resources

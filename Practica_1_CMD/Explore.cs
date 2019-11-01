@@ -13,12 +13,16 @@ namespace Practica_1_CMD
 {
     public partial class Explore : Form
     {
+        // Lista de strings.
         List<string> listFile = new List<string>();
+        
+        // Constructor.
         public Explore()
         {
             InitializeComponent();
         }
 
+        // Explorador de archivos.
         private void Explore_Load(object sender, EventArgs e)
         {
             string ruta = "C:\\Users\\Alfredo\\Desktop\\Practica_1_CMD\\Practica_1_CMD\\bin\\Debug";
@@ -33,13 +37,13 @@ namespace Practica_1_CMD
             }
         }
 
+        // Abrir archivos.
         private void lvArchivos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(lvArchivos.FocusedItem != null)
             {
                 System.Diagnostics.Process.Start(listFile[lvArchivos.FocusedItem.Index]);
-            }
-                
+            }  
         }
     }
 }

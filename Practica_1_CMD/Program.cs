@@ -16,7 +16,7 @@ namespace Practica_1_CMD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new cmd());
+            Application.Run(new Inicio());
         }
     }
 }

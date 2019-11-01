@@ -12,6 +12,7 @@ namespace Practica_1_CMD
 {
     public partial class Info : Form
     {
+        // Constructor.
         public Info()
         {
             InitializeComponent();
