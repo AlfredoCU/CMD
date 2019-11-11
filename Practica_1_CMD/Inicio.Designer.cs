@@ -46,6 +46,8 @@
             this.pbBateria = new System.Windows.Forms.ProgressBar();
             this.lblBateria = new System.Windows.Forms.Label();
             this.lblBateriaTxt = new System.Windows.Forms.Label();
+            this.TsmiJuegos = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiTetris = new System.Windows.Forms.ToolStripMenuItem();
             this.msPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,8 +68,9 @@
             // 
             this.TsmiInicio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiArchivos,
-            this.TsmiCMD,
+            this.TsmiJuegos,
             this.TsmiMP,
+            this.TsmiCMD,
             this.TsmiSistema,
             this.tsmiBat,
             this.TsmiSalir});
@@ -123,7 +126,7 @@
             // 
             this.TsmiMPMusica.Image = ((System.Drawing.Image)(resources.GetObject("TsmiMPMusica.Image")));
             this.TsmiMPMusica.Name = "TsmiMPMusica";
-            this.TsmiMPMusica.Size = new System.Drawing.Size(126, 22);
+            this.TsmiMPMusica.Size = new System.Drawing.Size(152, 22);
             this.TsmiMPMusica.Text = "Música";
             this.TsmiMPMusica.Click += new System.EventHandler(this.TsmiMPMusica_Click);
             // 
@@ -198,6 +201,23 @@
             this.lblBateriaTxt.TabIndex = 5;
             this.lblBateriaTxt.Text = "Batería:";
             // 
+            // TsmiJuegos
+            // 
+            this.TsmiJuegos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiTetris});
+            this.TsmiJuegos.Image = ((System.Drawing.Image)(resources.GetObject("TsmiJuegos.Image")));
+            this.TsmiJuegos.Name = "TsmiJuegos";
+            this.TsmiJuegos.Size = new System.Drawing.Size(168, 22);
+            this.TsmiJuegos.Text = "Juegos";
+            // 
+            // TsmiTetris
+            // 
+            this.TsmiTetris.Image = ((System.Drawing.Image)(resources.GetObject("TsmiTetris.Image")));
+            this.TsmiTetris.Name = "TsmiTetris";
+            this.TsmiTetris.Size = new System.Drawing.Size(152, 22);
+            this.TsmiTetris.Text = "Tetris";
+            this.TsmiTetris.Click += new System.EventHandler(this.TsmiTetris_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -246,6 +266,8 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiMP;
         private System.Windows.Forms.ToolStripMenuItem TsmiMPMusica;
         private System.Windows.Forms.ToolStripMenuItem TsmiDescargar;
+        private System.Windows.Forms.ToolStripMenuItem TsmiJuegos;
+        private System.Windows.Forms.ToolStripMenuItem TsmiTetris;
     }
 }
 

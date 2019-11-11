@@ -8,6 +8,7 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tetris_cs;
 
 namespace Practica_1_CMD
 {
@@ -33,6 +34,14 @@ namespace Practica_1_CMD
         private void TsmiDocumentos_Click(object sender, EventArgs e)
         {
             Doc abrir = new Doc();
+            abrir.MdiParent = this;
+            abrir.Show();
+        }
+
+        // Juegos.
+        private void TsmiTetris_Click(object sender, EventArgs e)
+        {
+            tetris_cs.Form1 abrir = new tetris_cs.Form1();
             abrir.MdiParent = this;
             abrir.Show();
         }

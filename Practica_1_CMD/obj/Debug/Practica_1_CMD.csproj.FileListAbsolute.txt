@@ -48,3 +48,4 @@ C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Descargar.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Inicio.resources
 C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\Practica_1_CMD.Cmd.resources
+C:\Users\Alfredo\Desktop\Practica_1_CMD\Practica_1_CMD\obj\Debug\tetris_cs.Form1.resources
