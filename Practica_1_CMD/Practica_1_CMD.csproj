@@ -55,11 +55,27 @@
     <Compile Include="Bateria.Designer.cs">
       <DependentUpon>Bateria.cs</DependentUpon>
     </Compile>
-    <Compile Include="cmd.cs">
+    <Compile Include="Cmd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cmd.Designer.cs">
-      <DependentUpon>cmd.cs</DependentUpon>
+    <Compile Include="Cmd.Designer.cs">
+      <DependentUpon>Cmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="game.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hilos.cs" />
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Descargar.cs">
       <SubType>Form</SubType>
@@ -93,11 +109,21 @@
     <Compile Include="Reproductor.Designer.cs">
       <DependentUpon>Reproductor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shape.cs" />
+    <Compile Include="ShapePreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Bateria.resx">
       <DependentUpon>Bateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cmd.resx">
-      <DependentUpon>cmd.cs</DependentUpon>
+      <DependentUpon>Cmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Descargar.resx">
       <DependentUpon>Descargar.cs</DependentUpon>

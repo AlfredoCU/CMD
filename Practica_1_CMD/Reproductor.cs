@@ -12,11 +12,13 @@ namespace Practica_1_CMD
 {
     public partial class Reproductor : Form
     {
+        // Inicializando atributos.
         int count = 0;
         string countText = "";
         string[] archivosMP3;
         string[] rutasArchivosMP3;
 
+        // Constructor.
         public Reproductor()
         {
             InitializeComponent();
