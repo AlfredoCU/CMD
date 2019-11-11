@@ -13,13 +13,15 @@ namespace Practica_1_CMD
 {
     public partial class Descargar : Form
     {
-        WebClient cliente = new WebClient(); // Clase para utilizar métodos para acceder a la web.
+        // Clase para utilizar métodos para acceder a la web.
+        WebClient cliente = new WebClient();
 
         // Constructor.
         public Descargar()
         {
             InitializeComponent();
             this.btnDescargar.Enabled = false;
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
         }
 
         // Formulario principal.

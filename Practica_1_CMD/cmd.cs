@@ -5,63 +5,34 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Practica_1_CMD
 {
-    public partial class cmd : Form
+    public partial class Cmd : Form
     {
-        // Clase para la batería.
-        PowerStatus status = SystemInformation.PowerStatus;
-
-        // Contructor.
-        public cmd()
+        // Constructor.
+        public Cmd()
         {
             InitializeComponent();
         }
 
-        // Vista CMD.
-        private void cmd_Load(object sender, EventArgs e)
+        // CMD.
+        private void Cmd_Load(object sender, EventArgs e)
         {
             DataStatic();
-            BateriaTxt();
-            this.tDate.Enabled = true;
         }
-
-        // Ménu Principal.
 
         // Explorador de archivos.
-        private void TsmiExplorador_Click(object sender, EventArgs e)
+        private void tsmiExpo_Click(object sender, EventArgs e)
         {
-            Explore abrirE = new Explore();
-            abrirE.ShowDialog();
-        }
-
-        // Información de comandos.
-        private void TsmiInfo_Click(object sender, EventArgs e)
-        {
-            Info abrir = new Info();
-            abrir.ShowDialog();
-        }
-
-        // Ver documentos.
-        private void TsmiDocumentos_Click(object sender, EventArgs e)
-        {
-            Doc abrir = new Doc();
-            abrir.ShowDialog();
-        }
-
-        // Descargar archivos.
-        private void TsmiDescargar_Click(object sender, EventArgs e)
-        {
-            Descargar abrir = new Descargar();
+            Explore abrir = new Explore();
             abrir.ShowDialog();
         }
 
         // Color de fuente (Consola).
-        private void TsmiColorF_Click(object sender, EventArgs e)
+        private void tsmiCF_Click(object sender, EventArgs e)
         {
             var cFont = cdColorFC.ShowDialog();
             if (cFont == DialogResult.OK)
@@ -71,71 +42,41 @@ namespace Practica_1_CMD
         }
 
         // Color de fondo (Consola).
-        private void TsmiColorC_Click(object sender, EventArgs e)
+        private void tsmiCC_Click(object sender, EventArgs e)
         {
             var cConsole = cdColorFC.ShowDialog();
-            if(cConsole == DialogResult.OK)
+            if (cConsole == DialogResult.OK)
             {
                 rtbConsola.BackColor = cdColorFC.Color;
             }
         }
 
         // Formato de letra.
-        private void TsmiFor_Click(object sender, EventArgs e)
+        private void tsmiF_Click(object sender, EventArgs e)
         {
             var vFont = fdFormato.ShowDialog();
-            if( vFont == DialogResult.OK)
+            if (vFont == DialogResult.OK)
             {
                 rtbConsola.Font = fdFormato.Font;
             }
         }
 
+        // Información de comandos
+        private void tsmiInf_Click(object sender, EventArgs e)
+        {
+            Info abrir = new Info();
+            abrir.ShowDialog();
+        }
+
         // Acerca del CMD.
-        private void TsmiCMD_Click(object sender, EventArgs e)
+        private void tsmiACMD_Click(object sender, EventArgs e)
         {
             string mensaje = "Símbolo del sistema (CMD). \n\nVersión: 3.0";
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        // Acerca del sistema.
-        private void TsmiSistema_Click(object sender, EventArgs e)
-        {
-            string mensaje = "Windows 10 Home Single Languaje. Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz 2.40GHz";
-            MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        // Bateria.
-        private void tsmiBat_Click(object sender, EventArgs e)
-        {
-            Bateria abrir = new Bateria();
-            abrir.ShowDialog();
-        }
-
-        // Reproductor de Música.
-        private void TsmiMPMusica_Click(object sender, EventArgs e)
-        {
-            Reproductor abrir = new Reproductor();
-            abrir.ShowDialog();
-        }
-
-        // Salir del sistema.
-        private void TsmiSalir_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogo = MessageBox.Show("¿Desea salir del sistema?", "Salir", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (dialogo == DialogResult.OK)
-            {
-                System.Windows.Forms.Application.Exit();
-            }
-        }
-
-        // Salir de la aplicación y detener proceso.
-        private void cmd_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
         // Iniciar proceso (cmd.exe).
-        public string Command (string command)
+        public string Command(string command)
         {
             // Indicamos que deseamos inicializar el proceso cmd.exe junto al comando de arranque.
             // /C, le indicamos al proceso cmd que deseamos que cuando termine la tarea asignada se cierre el procesos.
@@ -188,31 +129,6 @@ namespace Practica_1_CMD
                 this.rtbConsola.Text = result + "\n# ";
                 this.rtbConsola.SelectionStart = this.rtbConsola.Text.Length - 1;
             }
-        }
-
-        // Hora actual del sistema. 
-        public void Date()
-        {
-            this.lblDate.Text = DateTime.Now.ToString();
-        }
-
-        // Bateria actual del sistema. 
-        public void Bateria()
-        {
-            this.pbBateria.Value = Convert.ToInt32(status.BatteryLifePercent * 100);
-        }
-
-        public void BateriaTxt()
-        {
-            this.lblBateria.Text = status.BatteryLifePercent.ToString("P0");
-        }
-
-        // Fecha en tiempo real.
-        private void tDate_Tick(object sender, EventArgs e)
-        {
-            Date();
-            Bateria();
-            BateriaTxt();
         }
     }
 }
